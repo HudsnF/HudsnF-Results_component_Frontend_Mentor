@@ -1,0 +1,168 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-shadow: 5px 5px 25px hsl(241, 100%, 89%);
+    display: flex;
+    border-radius: 25px;
+    max-width: 1440px;
+    height: 400px;
+}
+
+.container-left {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(241, 100%, 89%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.container-left h1 {
+    font-size: 18px;
+    margin-top: -8px;
+    margin-bottom: 50px;
+}
+
+.container-left .circle {
+    background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    border-radius: 50%;
+    padding: 30px;
+    margin-top: -25px;
+}
+
+.container-left .circle p {
+    text-align: center;
+}
+
+.container-left .circle p b {
+    color: white;
+    font-size: 50px;
+    margin: 15px;
+}
+
+.container-left .text h2 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.container-left .text p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    width: 300px;
+    padding: 8px;
+
+}
+
+.container-right h1 {
+    color: hsl(224, 30%, 27%);
+    font-size: 18px;
+    padding: 10px 0 15px 23px;
+}
+
+.container-right .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    margin: 8px 20px;
+    border-radius: 10px;
+}
+
+.container-right .card img {
+    width: 16px;
+}
+
+.container-right .card span {
+    color: hsl(241, 27%, 62%);
+}
+
+.container-right .card span b {
+    color: hsl(224, 30%, 27%);
+}
+
+.container-right .card-1 {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 80%, 0.123);
+}
+
+.container-right .card-2 {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.110);
+}
+
+.container-right .card-3 {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.060);
+}
+
+.container-right .card-4 {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.060);
+}
+
+.container-right .button {
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 14px;
+    padding: 14px;
+    margin: 15px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container-right .button:hover {
+    background-color: hsl(233, 54%, 16%);
+}
+
+@media screen and (max-width: 620px) {
+   
+    .container {
+        flex-direction: column;
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .container-left {
+        height: 300px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .container-left h1 {
+        font-size: 16px;
+        margin-top: -16px;
+    }
+
+    .container-left .circle {
+        padding: 18px;
+        margin-top: -35px;
+    }
+
+    .container-left .circle p b {
+        font-size: 40px;
+    }
+
+    .container-left .text h2 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
